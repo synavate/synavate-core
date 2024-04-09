@@ -34,7 +34,30 @@
       "options": {
         "targetName": "test"
       }
+    },
+    {
+      "plugin": "@nx/next/plugin",
+      "options": {
+        "buildTargetName": "build",
+        "devTargetName": "dev",
+        "startTargetName": "start",
+        "serveStaticTargetName": "serve-static"
+      }
+    },
+    {
+      "plugin": "@nx/playwright/plugin",
+      "options": {
+        "targetName": "e2e"
+      }
     }
   ],
-  "nxCloudAccessToken": "ZTI1MTlhNzItZWRmMS00MjAyLTllZjMtNjY5OGJiODgzMjYzfHJlYWQtd3JpdGU="
+  "nxCloudAccessToken": "ZTI1MTlhNzItZWRmMS00MjAyLTllZjMtNjY5OGJiODgzMjYzfHJlYWQtd3JpdGU=",
+  "generators": {
+    "@nx/next": {
+      "application": {
+        "style": "css",
+        "linter": "eslint"
+      }
+    }
+  }
 }
